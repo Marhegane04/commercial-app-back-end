@@ -1,10 +1,10 @@
 <?php
 
-// Check PHP version.
+// Verification de la version de PHP
 $minPhpVersion = '7.4'; // If you update this, don't forget to update `spark`.
 if (version_compare(PHP_VERSION, $minPhpVersion, '<')) {
     $message = sprintf(
-        'Your PHP version must be %s or higher to run CodeIgniter. Current version: %s',
+        'Votre version de PHP doit être %s ou supérieure pour exécuter CodeIgniter. Version actuelle : %s',
         $minPhpVersion,
         PHP_VERSION
     );
@@ -12,7 +12,7 @@ if (version_compare(PHP_VERSION, $minPhpVersion, '<')) {
     exit($message);
 }
 
-// Path to the front controller (this file)
+// Chemin d'accès au contrôleur frontal (ce fichier)
 define('FCPATH', __DIR__ . DIRECTORY_SEPARATOR);
 
 // Ensure the current directory is pointing to the front controller's directory
